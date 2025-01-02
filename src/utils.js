@@ -40,15 +40,24 @@ export const showHelp = () => {
 };
 
 export const listAllTasks = (tasks) => {
-    let i = 1; 
-    tasks.forEach((task) => {
-        console.log(`${colors.cyan}${i++}. ${task.description} - ${task.status} - ${new Date(task.createdAt).toLocaleString()} ${colors.reset}`);
-    });
+    console.table(tasks.map((task) => {
+        return {
+            id: task.id,
+            description: task.description,
+            status: task.status,
+            createdAt: new Date(task.createdAt).toLocaleString()
+        }
+    })
+    );
 }
 
 export const listFilteredTasks = (tasks) => {
-    let i = 1; 
-    tasks.forEach((task) => {
-        console.log(`${colors.cyan}${i++}. ${task.description} - ${new Date(task.createdAt).toLocaleString()} ${colors.reset}`);
-    });
+    console.table(tasks.map((task) => {
+        return {
+            id: task.id,
+            description: task.description,
+            createdAt: new Date(task.createdAt).toLocaleString()
+        }
+    })
+    );
 }
