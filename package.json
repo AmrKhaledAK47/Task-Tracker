@@ -1,6 +1,6 @@
 {
   "name": "task-tracker-cli-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "command-line interface (CLI) tool for managing tasks. It allows you to add, list, update, and delete tasks, as well as mark them as done or in-progress.",
   "homepage": "https://github.com/AmrKhaledAK47/Task-Tracker#readme",
   "repository": {
