@@ -1,5 +1,5 @@
-import { colors, listAllTasks, listFilteredTasks} from "./utils.js";
-import { getDB} from "./db.js";
+import { colors, listAllTasks, listFilteredTasks} from "../utils.js";
+import { getDB} from "../db.js";
 
 export const list = async (cmd) => {
     if(cmd !== 'todo' && cmd !== 'done' && cmd !== 'in-progress' && cmd !== undefined) {

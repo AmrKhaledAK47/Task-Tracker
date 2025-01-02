@@ -27,6 +27,13 @@
       "status": "in-progress",
       "createdAt": "2025-01-02T03:20:55.477Z",
       "updatesAt": null
+    },
+    {
+      "id": 1735788984977,
+      "description": "Buy groceries",
+      "status": "todo",
+      "createdAt": "2025-01-02T03:36:24.977Z",
+      "updatesAt": null
     }
   ]
 }

@@ -1,5 +1,5 @@
-import { colors } from "./utils.js";
-import { getDB, saveDB } from "./db.js";
+import { colors } from "../utils.js";
+import { getDB, saveDB } from "../db.js";
 
 export const markInProgress = async (id) => {
     if (!id) {

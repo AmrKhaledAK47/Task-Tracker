@@ -1,5 +1,5 @@
-import { colors } from "./utils.js";
-import { insertDB } from "./db.js";
+import { colors } from "../utils.js";
+import { insertDB } from "../db.js";
 
 export const add = async (task) => {
     if (!task) {
