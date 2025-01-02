@@ -20,3 +20,20 @@ export const isJsonExists = async (path) => {
         return false;
     }
 }
+
+export const showHelp = () => {
+    console.log(`
+        task-cli add <task> - Add a task
+        task-cli list - List all tasks
+        task-cli list done - List all done tasks
+        task-cli list todo - List all todo tasks
+        task-cli list in-progress - List all in-progress tasks
+        task-cli mark-done <id> - Mark a task as done
+        task-cli mark-in-progress <id> - Mark a task as in progress
+        task-cli delete <id> - Delete a task
+        task-cli update <id> <task> - Update a task
+        task-cli help - Show help
+        task-cli version - Show version
+        task-cli - Show help
+    `);
+};
