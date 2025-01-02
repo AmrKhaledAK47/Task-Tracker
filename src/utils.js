@@ -6,6 +6,7 @@ export const colors = {
     red: "\x1b[31m",
     yellow: "\x1b[33m",
     cyan: "\x1b[36m",
+    blue: "\x1b[34m"
 };
 
 export const createJsonFile = async (fileName, data) => {
@@ -37,3 +38,17 @@ export const showHelp = () => {
         task-cli - Show help
     `);
 };
+
+export const listAllTasks = (tasks) => {
+    let i = 1; 
+    tasks.forEach((task) => {
+        console.log(`${colors.cyan}${i++}. ${task.description} - ${task.status} - ${new Date(task.createdAt).toLocaleString()} ${colors.reset}`);
+    });
+}
+
+export const listFilteredTasks = (tasks) => {
+    let i = 1; 
+    tasks.forEach((task) => {
+        console.log(`${colors.cyan}${i++}. ${task.description} - ${new Date(task.createdAt).toLocaleString()} ${colors.reset}`);
+    });
+}
